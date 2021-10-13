@@ -1,0 +1,36 @@
+.header{
+ 	width: 100%;
+ 	background:#FFF5EE;
+ 	padding: 25px;
+ 	padding-left: 20vw;
+ 	font-size: 27px;
+ 	text-transform: uppercase;
+}
+.block,.Nav{
+	background:#FFF5EE;
+	margin: 10px 20vw;
+	padding: 1vw;
+}
+div,a{
+	margin: 10px;
+}
+.Nav{
+	margin-bottom: 20px;
+}
+nav{
+	padding-left: 20vw;
+}
+.footer{
+	width: 100%;
+ 	background:#FFF5EE;
+ 	padding: 25px;
+}
+.logo{
+	float: left;
+}
+tr:nth-child(odd){
+	background: #DEB887;
+}
+tr:nth-child(even){
+	background: #F5DEB3;
+}
