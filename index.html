@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>index.html</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header  id="pepe">
+      <div class="header"><img class="logo" src="logo.png"><b>Шапка</b></div>
+    </header>
+    <div class="Nav">
+      <nav>
+        <a href="#refs">Ссылки</a>
+        <a href="#form">Форма</a>
+        <a href="#table">Таблица</a>
+      </nav>
+    </div>
+    <div class="block">
+      <div id="ssilki"><b>Ссылки</b></div>
+      <div>Абсолютная гиперрсылка на страцу сайта youtube.com</div>
+      <a href="http://www.youtube.com/" target="_blank">Ссылка</a>
+      <div>Абсолютная гиперрсылка в протоколе https</div>
+      <a href="https://www.youtube.com/"target="_blank">Ссылка</a>
+      <div>Ссылка на файл на сервере FTP без авторизации</div>
+      <a href="ftp://example/file.txt"target="_blank">Ссылка</a>
+      <div>Ссылка на файл на сервере FTP с авторизацией</div>
+      <a href="ftp://login:password@example.com"target="_blank">Ссылка</a>
+      <div>Ссылка на фрагмент некоторого сайт</div>
+      <a href="https://www.kinopoisk.ru/film/409424/#today-in-cinema-block"target="_blank">Ссылка</a>
+      <div>Ссылка на фрагмент этой страницы</div>
+      <a href="#pepe">К началу</a>
+      <div>Ссылка с двумя параметрами URL</div>
+      <a href="http://shpargalkablog.ru/2016/09/url-parameters-js.html?a&b&c">Ссылка</a>
+      <div>Список ссылок с навигацией по сайту</div>
+      <ol>
+        <li><a href="https://www.kinopoisk.ru"title="Kinopoisk"target="_blank">Главная страница</a></li>
+        <li><a href="https://www.kinopoisk.ru/media/news/"title="News"target="_blank">Новости</a></li> 
+        <li><a href="https://www.kinopoisk.ru/premiere/"title="Afisha"target="_blank">Афиша</a></li> 
+      </ol>
+      <div>Ссылка без href</div>
+      <a title="А на самом деле нет">Ссылка есть</a>
+      <div>Ссылка с пустым href</div>
+      <a href="">Здесь ничего нет</a>
+      <div>Ссылка по которой запрещен переход поисковикам и запрещена индексация</div>
+      <a href="https://www.youtube.com/" target="_blank" content="noindex, nofollow"> Роботы не пройдут </a>
+      <div>Контекстная ссылка</div>
+      <div>Ничего ничего и тут </div>
+      <a href="https://www.google.com/webhp?hl=ru&sa=X&ved=0ahUKEwigi-fC8q7zAhVxwIsKHUazCN8QPAgI" target="_blank">ОПА</a><a> и опять ничего</a>
+      <div>Картинка-ссылка</div>
+      <a href="https://apelsin.ru/"target="_blank">
+        <img src="https://foodcity.ru/storage/products/October2018/6XZSr6ddCl6cxfo0UchP.jpg" width="200" height="200">
+      </a>
+      <div>Прямоугольная и круглая область-ссылка(слева на картинке круг, справа прямоугольник)</div>
+      <p>
+        <img src="https://static8.depositphotos.com/1288351/1054/i/600/depositphotos_10545204-stock-photo-large-star-field.jpg" width="200" height="100"usemap="#map" alt="По каким-то причинам картинка не загрузилась :(">
+      </p>
+      <p>
+        <map name="map"> 
+          <area shape="circle" alt="!!!" coords="50,50, 40" href="https://www.meme-arsenal.com/memes/5e058a478a1956088d6c646b20f91c2b.jpg">
+          <area shape="rec" alt="!!!" coords="110,10, 190,90" href="https://lh3.googleusercontent.com/proxy/Yy_iF8qVlRjhczfnG5yh1mt35tM69ZdFqhW6guf7dBJiT3IJdXYuzv0ms-huE6fX2tsz-v0jf9f9IenXBQ0RSdugoJs">
+        </map>
+      </p>
+      <a href="Что-то в этом же каталоге.html">Относительная в этом каталоге</a>
+      <br>
+      <a href="../Что-то на каталог выше.html">Относительная на каталог выше</a>
+      <br>
+      <a href="../../Что-то на 2 каталога выше.html" title="../">На два каталога выше</a>
+    </div>
+    <div class="block"> 
+      <div id="form"><b>Форма</b></div>
+      <form>
+          Имя:
+          <input name="Name" placeholder="Name">
+          <br>
+          Email:
+          <input name="Email" placeholder="Email"> 
+          <br>
+          Дата рождения:
+          <input type="date">
+          <br>
+          Пол:
+          <input type="radio" name="p">Мужской
+          <input type="radio" name="p">Женский
+          <br>
+          Количество конечностей:
+          <input type="radio" name="k">0
+          <input type="radio" name="k">2  
+          <input type="radio" name="k">3
+          <input type="radio" name="k">4
+          <input type="radio" name="k">5?
+          <input type="radio" name="k">6???
+          <br>
+          Суперспособность
+          <select>
+            <option>Бессмертие</option>
+            <option>Прохождение сквозь стены</option>
+            <option>Леви что тация</option>
+          </select>
+          <br>
+          Биография
+          <textarea placeholder="Рассказывай..">
+          </textarea>
+          <br>
+          Я поставлю галочку в поле справа:
+          <input type="checkbox">
+          <input type="submit" value="Отправить">
+      </form>
+     </div> 
+    <div class="block">
+      <div><b>Таблица</b></div>
+      <table border="1" id="table">
+        <tr>
+          <td>
+            Столбец1
+          </td>
+          <td>
+            Столбец2
+          </td>
+          <td>
+            Столбец3
+          </td>
+        </tr>
+        <tr>
+          <td>
+            (◕‿◕)
+          </td>
+          <td>
+            (◕‿◕)
+          </td>
+          <td>
+            (◕‿◕)
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            ‿︵‿ヽ(°□° )ノ︵‿︵
+          </td>
+
+          <td>
+            (◕‿◕)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            (◕‿◕)
+          </td>
+          <td colspan="2">
+            ‿︵‿ヽ(°□° )ノ︵‿︵
+          </td>
+        </tr>
+        <tr>
+          <td>
+            (◕‿◕)
+          </td>
+          <td>
+            (◕‿◕)
+          </td>
+          <td>
+            (◕‿◕)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            (◕‿◕)
+          </td>
+          <td>
+            (◕‿◕)
+          </td>
+          <td>
+            (◕‿◕)
+          </td>
+        </tr>
+      </table>
+    </div>
+    <footer>
+      <div class="footer"><b>©Алексей Купальян</div>
+    </footer>
+  </body>
+</html>
